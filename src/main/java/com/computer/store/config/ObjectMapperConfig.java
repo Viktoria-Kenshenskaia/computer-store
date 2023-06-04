@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.module.SimpleModule;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 import java.util.Collection;
 
@@ -20,6 +21,7 @@ public class ObjectMapperConfig {
      * @return the configured ObjectMapper instance
      */
     @Bean
+    @Primary
     public ObjectMapper getObjectMapper() {
         ObjectMapper objectMapper = new ObjectMapper();
 
