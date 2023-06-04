@@ -2,6 +2,7 @@ package com.computer.store.config;
 
 import com.computer.store.entities.Product;
 import org.reflections.Reflections;
+import org.reflections.util.ConfigurationBuilder;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -20,7 +21,9 @@ public abstract class ProductMixin {
      * @return Collection of Class objects representing the subtypes of Product.
      */
     public static Collection<Class<?>> getSubtypes() {
-        Reflections reflections = new Reflections("com.computer.store.entities");
+        Reflections reflections = new Reflections(
+                new ConfigurationBuilder().forPackage(Product.class.getPackageName())
+        );
         Set<Class<? extends Product>> subtypes = reflections.getSubTypesOf(Product.class);
         return new ArrayList<>(subtypes);
     }
