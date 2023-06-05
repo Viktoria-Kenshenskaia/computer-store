@@ -3,6 +3,7 @@
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.1.0-brightgreen)](https://spring.io/projects/spring-boot)
 [![Java](https://img.shields.io/badge/Java-17-blue)](https://www.oracle.com/java/technologies/javase-jdk17-downloads.html)
 [![Gradle](https://img.shields.io/badge/Gradle-blueviolet)](https://gradle.org/releases/)
+[![Swagger](https://img.shields.io/badge/Swagger-blue)](https://your-swagger-url.com/)
 [![H2 Database](https://img.shields.io/badge/H2%20Database-orange)](https://www.h2database.com/html/main.html)
 [![JUnit](https://img.shields.io/badge/JUnit-green)](https://junit.org/)
 [![Mockito](https://img.shields.io/badge/Mockito-green)](https://site.mockito.org/)
